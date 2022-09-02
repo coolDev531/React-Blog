@@ -8,7 +8,7 @@ the useParams() hook provided by the React routing library react-router-dom, whi
 On the backend this I've utilized the node based backend framework popularly known as Express, wherein I've also used Socket for emitting events for exchanging data 
 between client-side and server-side, alongwith the 'fs' (File system) module for sending the json files containing the pertinent data that'll be rendered onto the screen.
 
-Also additionally, I've utlized the Redux independent state management library for sending data across the UI(user interface) after receiving it from the backend server. Extensively implemented the hooks that are entailed by Redux, useSelector() for selecting the state and useDispatch() for dispatching the action.
+Also additionally, I've utilized the Redux independent state management library for sending data across the UI(user interface) after receiving it from the backend server. Extensively implemented the hooks that are entailed by Redux, useSelector() for selecting the state and useDispatch() for dispatching the action.
 
 ## What I learnt?
 1) Using react-routing with the help of react router library
