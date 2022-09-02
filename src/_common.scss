@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:common-font;
+}
+@import 'animate.css';
+
+@font-face{
+    font-family:common-font;
+    src:url("../font.otf")
+}
+.NavBarLogo{
+    width:90%;
+    margin:0 auto;
+    text-align:center;
+    font-size:35px;
+    .rotateLogo{
+        display:inline-block;
+        transform:rotate(-90deg);
+        font-size:30px;
+        position:relative;
+        left:25px;
+        bottom:9px;
+    }
+    nav{
+        width:60%;
+        margin:3% auto;
+        display:flex;
+        justify-content:space-between;
+        font-size:20px;
+    }
+    .navlinks{
+        display:block;
+        text-decoration:none;
+        color:black;
+        position:relative;
+    }
+    .navlinks::after{
+        content:'';
+        width:99.8%;
+        background-color:black;
+        padding:2px;
+        height:2px;
+        position:absolute;
+        top:100%;
+        left:0;
+        transform:scaleX(0);
+        transition:all 0.3s ease-in;
+    }
+    .navlinks:hover:after{
+        transform:scaleX(1);
+    }
+    .hamburger-menu{
+        cursor:pointer;
+        display:none;
+    }
+
+    hr{
+        margin:2% auto;
+        border:2px solid #000;
+    }
+}
+@media only screen and (max-width:890px){
+    .NavBarLogo{
+        width:100%;
+        text-align:left;
+        .mainLogo{
+            width:50%;
+            font-size:40px;
+        }
+        .rotateLogo{
+            font-size:20px;
+            left:20px;
+        }
+        nav{
+            width:100%;
+            padding:2% 0;
+            flex-direction:column;
+            text-align:center;
+            border:2px solid black;
+            display:none;
+            .navlinks{
+                margin-bottom:2%;
+            }
+        }
+        hr{
+            display:none;
+        }
+        .hamburger-menu{
+            display:block;
+            float:right;
+            position:absolute;
+            top:1%;
+            left:85%;
+        }
+        nav.displayOn{
+            display:block;
+            animation:fadeInDown 0.5s ease-in;
+        }
+    }
+}

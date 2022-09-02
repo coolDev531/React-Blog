@@ -1,0 +1,122 @@
+.tech-wrapper {
+  width: 90%;
+  margin: 2% auto;
+  display: flex;
+  justify-content: space-between;
+}
+.tech-wrapper .tech-all-header {
+  margin-bottom: 5%;
+  position: relative;
+}
+.tech-wrapper .tech-all-header::after {
+  content: "";
+  padding: 2px;
+  width: 20%;
+  background-color: red;
+  position: absolute;
+  top: 105%;
+  left: 0;
+}
+.tech-wrapper .tech-all-posts {
+  width: 55%;
+}
+.tech-wrapper .tech-all-posts .tech-all-header {
+  font-size: 40px;
+}
+.tech-wrapper .tech-all-posts .all-posts-wrapper .all-posts {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 7%;
+  position: relative;
+  padding-bottom: 4%;
+  border-bottom: 2px solid gray;
+}
+.tech-wrapper .tech-all-posts .all-posts-wrapper .all-posts img {
+  width: 45%;
+}
+.tech-wrapper .tech-all-posts .all-posts-wrapper .all-posts .side-content {
+  width: 45%;
+}
+.tech-wrapper .tech-all-posts .all-posts-wrapper .all-posts .side-content p {
+  color: grey;
+}
+.tech-wrapper .tech-all-posts .all-posts-wrapper .all-posts .side-content h3 {
+  font-size: 25px;
+  margin-bottom: 5%;
+}
+.tech-wrapper .tech-all-posts .all-posts-wrapper .all-posts .side-content h3 .title-links {
+  text-decoration: none;
+  color: black;
+}
+.tech-wrapper .tech-all-posts .all-posts-wrapper .all-posts .side-content h3 .title-links:hover {
+  color: lightblue;
+}
+.tech-wrapper .tech-all-posts .all-posts-wrapper .all-posts .side-content .category {
+  margin-top: 10%;
+}
+.tech-wrapper .tech-recent-posts {
+  width: 40%;
+}
+.tech-wrapper .tech-recent-posts .tech-recent-header {
+  font-size: 35px;
+  margin: 7% 0;
+  position: relative;
+}
+.tech-wrapper .tech-recent-posts .tech-recent-header::after {
+  content: "";
+  padding: 2px;
+  width: 20%;
+  background-color: red;
+  position: absolute;
+  top: 105%;
+  left: 0;
+}
+.tech-wrapper .tech-recent-posts .recent-posts-wrapper .recent-posts {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 7%;
+  position: relative;
+  padding-bottom: 4%;
+  border-bottom: 2px solid gray;
+}
+.tech-wrapper .tech-recent-posts .recent-posts-wrapper .recent-posts img {
+  width: 45%;
+}
+.tech-wrapper .tech-recent-posts .recent-posts-wrapper .recent-posts .side-content {
+  width: 40%;
+}
+.tech-wrapper .tech-recent-posts .recent-posts-wrapper .recent-posts .side-content p {
+  color: grey;
+}
+.tech-wrapper .tech-recent-posts .recent-posts-wrapper .recent-posts .side-content .title-links {
+  text-decoration: none;
+  color: black;
+}
+.tech-wrapper .tech-recent-posts .recent-posts-wrapper .recent-posts .side-content .title-links:hover {
+  color: lightblue;
+}
+
+@media only screen and (max-width: 900px) {
+  .tech-wrapper {
+    flex-direction: column;
+    margin-top: 7%;
+  }
+  .tech-wrapper .tech-all-posts {
+    width: 100%;
+  }
+  .tech-wrapper .tech-all-posts .tech-all-header {
+    font-size: 30px;
+  }
+  .tech-wrapper .tech-all-posts .all-posts-wrapper img {
+    height: 20vh;
+  }
+  .tech-wrapper .tech-all-posts .all-posts-wrapper .all-posts .side-content h3 {
+    font-size: 18px;
+  }
+  .tech-wrapper .tech-all-posts .all-posts-wrapper .all-posts .side-content p {
+    font-size: 14px;
+  }
+  .tech-wrapper .tech-recent-posts {
+    width: 100%;
+  }
+}/*# sourceMappingURL=tech.css.map */
