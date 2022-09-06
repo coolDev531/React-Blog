@@ -19,6 +19,8 @@ import { BrowserRouter,Routes,Route,NavLink} from 'react-router-dom';
 import { useEffect } from 'react';
 import { useSelector,useDispatch } from 'react-redux';
 import {io} from "socket.io-client"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
 
@@ -42,6 +44,14 @@ function App() {
       })
     })
   },[])
+
+  AOS.init({
+    offset: 120, 
+    delay: 300, 
+    duration: 400, 
+    easing: 'ease', 
+    once: true,
+  });
 
   let [iconValue,iconChange]=useState({
     initialValue:faBars
@@ -68,9 +78,9 @@ function App() {
     <div className="App">
       <BrowserRouter forceRefresh={true}>
       <div className="NavBarLogo">
-        <h1 className="mainLogo"><span className="rotateLogo">The</span> Siren</h1>
+        <h1 data-aos="fade" data-aos-duration="1200" className="mainLogo"><span className="rotateLogo">The</span> Siren</h1>
         <FontAwesomeIcon icon={iconValue.initialValue} onClick={handleClick} className="hamburger-menu"/>
-        <nav>
+        <nav data-aos="fade" data-aos-duration="1200">
           <NavLink className="navlinks" to="/">Home</NavLink>
           <NavLink className="navlinks" to="/category/technology">Tech</NavLink>
           <NavLink className="navlinks" to="/category/sports">Sports</NavLink>

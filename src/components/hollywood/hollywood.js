@@ -18,7 +18,7 @@ function HollywoodPage(props){
                 <div className="all-posts-wrapper">
                     {
                         actualData.allHollywood.map(items=>(
-                            <div class="all-posts">
+                            <div data-aos="fade-up" class="all-posts">
                                 <img src={items.location} alt="" className="post-image"></img>
                                 <div className="side-content">
                                     <h3><Link to={`/category/hollywood/${items.title}`} className="title-links">{items.title}</Link></h3>
@@ -35,7 +35,7 @@ function HollywoodPage(props){
                 <div className="recent-posts-wrapper">
                     {
                         actualData.recentHollywood.map(items=>(
-                            <div class="recent-posts">
+                            <div data-aos="fade-up" class="recent-posts">
                                 <img src={items.location} alt="" className="post-image"></img>
                                 <div className="side-content">
                                     <h3><Link to={`/category/hollywood/${items.title}`} className="title-links">{items.title}</Link></h3>

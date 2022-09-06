@@ -12,13 +12,13 @@ function HomePage(props){
     return(
         <div className="home-page-wrapper">
             <div className="tech-bg-wrapper">
-            <Link className="big-box" to={`/category/technology/${props.data.backgroundBoxOne.title}`}>
+            <Link className="big-box" data-aos="fade-up" to={`/category/technology/${props.data.backgroundBoxOne.title}`}>
                 <div>
                     <h3>{actualData.backgroundBoxOne.title}</h3>
                     <p>{actualData.backgroundBoxOne.category} / {props.data.backgroundBoxOne.date}</p>
                 </div>
             </Link>
-                <div className="small-box-wrapper">
+                <div data-aos="fade-up" className="small-box-wrapper">
                 <Link to={`/category/technology/${props.data.backgroundBoxTwo.title}`}>
                     <div className="small-box-one">
                         <h4>{actualData.backgroundBoxTwo.title}</h4>
@@ -35,7 +35,7 @@ function HomePage(props){
             </div>
             <div className="sports-latest-wrapper">
                 <h2>Latest in sports!</h2>
-                <div className="sports-latest">
+                <div data-aos="fade-up" className="sports-latest">
                 {actualData.sportsLatest.map(items=>(
                     <div className="sports-latest-elements">
                         <img src={items.location} alt=""></img>
@@ -52,7 +52,7 @@ function HomePage(props){
                     <div className="all-posts-wrapper-home">
                         {
                             actualData.latestHollywood.map(items=>(
-                                <div class="all-posts">
+                                <div data-aos="fade-up" class="all-posts">
                                     <img src={items.location} alt="" className="post-image"></img>
                                     <div className="side-content">
                                         <h3><Link to={`/category/hollywood/${items.title}`} className="title-links">{items.title}</Link></h3>
@@ -69,7 +69,7 @@ function HomePage(props){
                     <div className="recent-posts-wrapper-home">
                         {
                             actualData.topLatestHollywood.map(items=>(
-                                <div class="recent-posts">
+                                <div data-aos="fade-up" class="recent-posts">
                                     <img src={items.location} alt="" className="post-image"></img>
                                     <div className="side-content">
                                         <h3><Link to={`/category/hollywood/${items.title}`} className="title-links">{items.title}</Link></h3>
@@ -83,7 +83,7 @@ function HomePage(props){
             </div>
             <div className="fitness-wrapper">
                 <h2>Latest in fitness!</h2>
-                <div className="fitness-element-wrapper">
+                <div data-aos="fade-up" className="fitness-element-wrapper">
                     {actualData.latestFitness.map(items=>(
                         <div className="fitness-elements">
                             <img src={items.location} alt=""></img>

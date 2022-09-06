@@ -16,19 +16,18 @@ function SportsBlogPage(props){
 
     return(
         <div className="blog-page">
-            <h1>{id}</h1>
+            <h1 data-aos="fade" data-aos-duration="900">{id}</h1>
             {actualData.allSports.filter(items=>items.title===id).map(items=>(
-                <div key={items.num} className="blog-page-content">
+                <div data-aos="fade-up" key={items.num} className="blog-page-content">
                     <img src={items.location} alt=""></img>
                     <p>{items.content}</p>
                     <div className="category-likes">
                         <span className="category">{items.category}</span>
-                        <span className="hands-clapping"><FontAwesomeIcon icon={faHandsClapping} /> 1.1K likes</span>
                     </div>
                     <hr />
                 </div>
             ))} 
-            <div className="icon-name">
+            <div data-aos="fade-up" className="icon-name">
                 <img src={actualData.articleIcon} alt=""></img>
                 <div class="icon-details">
                     <h3>Written By:</h3>
@@ -43,7 +42,7 @@ function SportsBlogPage(props){
                 <hr />
                 <div className="more-siren">
                 {actualData.recentSports.map(items=>(
-                    <div key={items.num} className="more-page-content">
+                    <div data-aos="fade-up" key={items.num} className="more-page-content">
                         <img src={items.location} alt="" className="article-image"></img>
                         <h3><Link to={`/category/sports/${items.title}`} className="title-links">{items.title}</Link></h3>
                         <div className="icon-date">

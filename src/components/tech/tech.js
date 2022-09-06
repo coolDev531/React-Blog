@@ -16,7 +16,7 @@ function TechPage(props){
                 <div className="all-posts-wrapper">
                     {
                         actualData.allTech.map(items=>(
-                            <div className="all-posts">
+                            <div data-aos="fade-up" className="all-posts">
                                 <img src={items.location} alt="" className="post-image"></img>
                                 <div className="side-content">
                                     <h3><Link to={`/category/technology/${items.title}`} className="title-links">{items.title}</Link></h3>
@@ -33,7 +33,7 @@ function TechPage(props){
                 <div className="recent-posts-wrapper">
                     {
                         actualData.recentTech.map(items=>(
-                            <div className="recent-posts">
+                            <div data-aos="fade-up" className="recent-posts">
                                 <img src={items.location} alt="" className="post-image"></img>
                                 <div className="side-content">
                                     <h3><Link to={`/category/technology/${items.title}`} className="title-links">{items.title}</Link></h3>

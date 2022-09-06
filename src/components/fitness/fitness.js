@@ -18,7 +18,7 @@ function FitnessPage(props){
                 <div className="all-posts-wrapper">
                     {
                         actualData.allFitness.map(items=>(
-                            <div className="all-posts">
+                            <div data-aos="fade-up" className="all-posts">
                                 <img src={items.location} alt="" className="post-image"></img>
                                 <div className="side-content">
                                     <h3><Link to={`/category/fitness/${items.title}`} className="title-links">{items.title}</Link></h3>
@@ -35,7 +35,7 @@ function FitnessPage(props){
                 <div className="recent-posts-wrapper">
                     {
                        actualData.recentFitness.map(items=>(
-                            <div className="recent-posts">
+                            <div data-aos="fade-up" className="recent-posts">
                                 <img src={items.location} alt="" className="post-image"></img>
                                 <div className="side-content">
                                     <h3><Link to={`/category/fitness/${items.title}`} className="title-links">{items.title}</Link></h3>
