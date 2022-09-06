@@ -3,7 +3,7 @@ This website is built mainly for the purpose of blogging on various topics such 
 This website is built using React, with utlizing the robust capabilities of CSS preprocessor called SASS more specifically SCSS.
 This project has extensively utilized the core concepts of React such as props( i.e, passing down data from parent components to children components ), 
 functional components and their respective hooks such as useState(), which is used to control and manage state changes of elements on a website and
-the useParams() hook provided by the React routing library react-router-dom, which helps in matching the URL with a specific data. I've also utilized the Socket-client tool for exchange of data between client-side and server-side.
+the useParams() hook provided by the React routing library react-router-dom, which helps in matching the URL with a specific data. For aesthetics and immaculate user interface, I've also incorporated the AOS javascript scroll animation I've also utilized the Socket-client tool for exchange of data between client-side and server-side.
 
 On the backend this I've utilized the node based backend framework popularly known as Express, wherein I've also used Socket for emitting events for exchanging data 
 between client-side and server-side, alongwith the 'fs' (File system) module for sending the json files containing the pertinent data that'll be rendered onto the screen.
@@ -117,3 +117,5 @@ https://siren-two.netlify.app/
 https://www.w3schools.com/react/react_usestate.asp
 https://www.w3schools.com/react/react_router.asp#gsc.tab=0&gsc.q=usestate
 https://reactrouter.com/docs/en/v6/hooks/use-params
+https://github.com/michalsnik/aos
+https://socket.io/get-started/chat
