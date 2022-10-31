@@ -111,7 +111,7 @@ https://siren-two.netlify.app/
 
 # Hosting
   1) Front-end: Netlify
-  2) Back-end: Heroku
+  2) Back-end: Render
 
 ## Resources used
 https://www.w3schools.com/react/react_usestate.asp
