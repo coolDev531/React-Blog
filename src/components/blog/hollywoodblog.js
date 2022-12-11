@@ -44,7 +44,7 @@ function HollywoodBlogPage(props){
                 {actualData.recentHollywood.map(items=>(
                     <div data-aos="fade-up" key={items.num} className="more-page-content">
                         <img src={items.location} alt="" className="article-image"></img>
-                        <h3><Link onClick={()=>{navigate(`/category/technology/${items.title}`); window.location.reload();}} to={`/category/hollywood/${items.title}`} className="title-links">{items.title}</Link></h3>
+                        <h3><Link onClick={()=>{navigate(`/category/hollywood/${items.title}`); window.location.reload();}} to={`/category/hollywood/${items.title}`} className="title-links">{items.title}</Link></h3>
                         <div className="icon-date">
                             <img src={actualData.articleIcon} alt=""></img>
                             <div className="owner-date">
