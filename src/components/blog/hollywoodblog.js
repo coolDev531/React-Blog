@@ -1,10 +1,10 @@
 import {useParams} from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHandsClapping } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from 'react-router-dom';
 import './styles/blog.css'
 import {Link} from 'react-router-dom'
 function HollywoodBlogPage(props){
     console.log(props.data)
+    let navigate=useNavigate();
     let {id}=useParams();
 
     let actualData;
@@ -44,7 +44,7 @@ function HollywoodBlogPage(props){
                 {actualData.recentHollywood.map(items=>(
                     <div data-aos="fade-up" key={items.num} className="more-page-content">
                         <img src={items.location} alt="" className="article-image"></img>
-                        <h3><Link to={`/category/hollywood/${items.title}`} className="title-links">{items.title}</Link></h3>
+                        <h3><Link onClick={()=>{navigate(`/category/technology/${items.title}`); window.location.reload();}} to={`/category/hollywood/${items.title}`} className="title-links">{items.title}</Link></h3>
                         <div className="icon-date">
                             <img src={actualData.articleIcon} alt=""></img>
                             <div className="owner-date">

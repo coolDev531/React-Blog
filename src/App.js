@@ -24,7 +24,7 @@ import 'aos/dist/aos.css';
 
 function App() {
 
-  let socket=io("https://siren-blog-backend.onrender.com/")
+  let socket=io("https://siren-blog.up.railway.app/")
   let stateElement=useSelector((state)=>{return state})
   let dispatch=useDispatch()
 
