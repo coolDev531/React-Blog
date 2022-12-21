@@ -17,7 +17,7 @@
   padding: 13%;
   font-size: 20px;
   color: #fff;
-  background-image: url("../../../../public/images/tech-img/fullstack.png");
+  background-image: url("https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=600");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -30,6 +30,10 @@
   top: 48%;
   left: 10%;
   font-size: 25px;
+  padding: 1%;
+  border-radius: 5px;
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
 }
 .home-page-wrapper .tech-bg-wrapper .big-box h3 .header-link {
   text-decoration: none;
@@ -43,6 +47,9 @@
   top: 58%;
   left: 10%;
   font-size: 18px;
+  padding: 1%;
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
 }
 .home-page-wrapper .tech-bg-wrapper .small-box-wrapper {
   width: 45%;
@@ -63,17 +70,25 @@
   position: absolute;
   top: 50%;
   font-size: 20px;
+  padding: 1%;
+  border-radius: 5px;
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
 }
 .home-page-wrapper .tech-bg-wrapper .small-box-wrapper .small-box-one p, .home-page-wrapper .tech-bg-wrapper .small-box-wrapper .small-box-two p {
   position: absolute;
   top: 70%;
   font-size: 15px;
+  padding: 1%;
+  border-radius: 5px;
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
 }
 .home-page-wrapper .tech-bg-wrapper .small-box-wrapper .small-box-one {
-  background-image: url("../../../../public/images/tech-img/reactweb.png");
+  background-image: url("https://images.pexels.com/photos/11035471/pexels-photo-11035471.jpeg?auto=compress&cs=tinysrgb&w=600");
 }
 .home-page-wrapper .tech-bg-wrapper .small-box-wrapper .small-box-two {
-  background-image: url("../../../../public/images/tech-img/harvard.jfif");
+  background-image: url("https://images.unsplash.com/photo-1609345635784-fd4a890e2326?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8aGFydmFyZHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60");
 }
 .home-page-wrapper .sports-latest-wrapper {
   padding: 2%;
@@ -103,8 +118,9 @@
 }
 .home-page-wrapper .sports-latest-wrapper .sports-latest .sports-latest-elements img {
   width: 90%;
-  height: 50vh;
+  height: 70vh;
   margin-bottom: 4%;
+  border-radius: 10px;
 }
 .home-page-wrapper .sports-latest-wrapper .sports-latest .sports-latest-elements h3 {
   font-size: 25px;
@@ -160,7 +176,8 @@
 }
 .home-page-wrapper .tech-wrapper-home .tech-all-posts .all-posts-wrapper-home .all-posts img {
   width: 45%;
-  height: 40vh;
+  height: 60vh;
+  border-radius: 10px;
 }
 .home-page-wrapper .tech-wrapper-home .tech-all-posts .all-posts-wrapper-home .all-posts .side-content {
   width: 45%;
@@ -209,6 +226,7 @@
 }
 .home-page-wrapper .tech-wrapper-home .tech-recent-posts-home .recent-posts-wrapper-home .recent-posts img {
   width: 45%;
+  border-radius: 10px;
 }
 .home-page-wrapper .tech-wrapper-home .tech-recent-posts-home .recent-posts-wrapper-home .recent-posts .side-content {
   width: 40%;
@@ -253,6 +271,7 @@
   width: 90%;
   height: 50vh;
   margin-bottom: 4%;
+  border-radius: 10px;
 }
 .home-page-wrapper .fitness-wrapper .fitness-element-wrapper .fitness-elements h3 {
   font-size: 25px;

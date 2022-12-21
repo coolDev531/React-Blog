@@ -13,7 +13,9 @@
 }
 .blog-page .blog-page-content img {
   width: 50%;
+  height: 100vh;
   margin-bottom: 3%;
+  border-radius: 10px;
 }
 .blog-page .blog-page-content p {
   font-size: 20px;
@@ -81,6 +83,9 @@
 .blog-page .more-articles-section .more-siren .more-page-content {
   width: 37%;
 }
+.blog-page .more-articles-section .more-siren .more-page-content img {
+  border-radius: 10px;
+}
 .blog-page .more-articles-section .more-siren .more-page-content h3 {
   margin-bottom: 5%;
 }
@@ -93,7 +98,7 @@
 }
 .blog-page .more-articles-section .more-siren .more-page-content .article-image {
   width: 80%;
-  height: 30vh;
+  height: 50vh;
 }
 .blog-page .more-articles-section .more-siren .more-page-content .icon-date {
   width: 100%;

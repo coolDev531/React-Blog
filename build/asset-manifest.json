@@ -1,15 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.23ae3bf2.css",
+    "main.css": "/static/css/main.6b495bcc.css",
     "main.js": "/static/js/main.7e3915f8.js",
     "static/media/font.otf": "/static/media/font.a6bc51efd33e2f7f1b95.otf",
-    "static/media/harvard.jfif": "/static/media/harvard.46605fe2c8bb57ca138a.jfif",
     "index.html": "/index.html",
-    "main.23ae3bf2.css.map": "/static/css/main.23ae3bf2.css.map",
+    "main.6b495bcc.css.map": "/static/css/main.6b495bcc.css.map",
     "main.7e3915f8.js.map": "/static/js/main.7e3915f8.js.map"
   },
   "entrypoints": [
-    "static/css/main.23ae3bf2.css",
+    "static/css/main.6b495bcc.css",
     "static/js/main.7e3915f8.js"
   ]
 }

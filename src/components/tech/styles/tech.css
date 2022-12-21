@@ -33,6 +33,8 @@
 }
 .tech-wrapper .tech-all-posts .all-posts-wrapper .all-posts img {
   width: 45%;
+  height: 60vh;
+  border-radius: 10px;
 }
 .tech-wrapper .tech-all-posts .all-posts-wrapper .all-posts .side-content {
   width: 45%;
@@ -81,6 +83,8 @@
 }
 .tech-wrapper .tech-recent-posts .recent-posts-wrapper .recent-posts img {
   width: 45%;
+  height: 40vh;
+  border-radius: 10px;
 }
 .tech-wrapper .tech-recent-posts .recent-posts-wrapper .recent-posts .side-content {
   width: 40%;
