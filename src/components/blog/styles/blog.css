@@ -113,6 +113,9 @@
 }
 
 @media only screen and (max-width: 900px) {
+  .blog-page .blog-page-content img {
+    width: 100%;
+  }
   .blog-page .blog-page-content .category-likes .category {
     font-size: 16px;
   }
